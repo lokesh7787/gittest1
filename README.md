@@ -7,6 +7,9 @@ Quick start
 3.Create a virtualenv:
 
 4.python3 -m venv virtualenv
+
 5.Activate virtualenv
+
 6.Run python manage.py migrate
+
 7.Start the development server and visit http://127.0.0.1:8000
