@@ -1,0 +1,33 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Email</th>
+      <th scope="col">First_name</th> 
+      <th scope="col">Last_name</th>
+      <th scope="col">mobile</th>
+    </tr>
+</thead>
+<tbody >
+    {%for post in cont %}
+    <tr>
+      <td><a href="{% url 'contact-detail' post.id  %}">
+    <div style="height:100%;width:100%">
+      {{ post.Email_id }}
+    </div>
+  </a>
+</td> 
+      <td>{{ post.First_name }}</td>
+      <td>{{ post.Last_name }}</td>
+      <td>{{ post.phone_number }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table> 
+{% endblock content %}
+
+
+
+
+
