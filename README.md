@@ -16,3 +16,5 @@ Quick start
 7.Start the development server and visit http://127.0.0.1:8000
 
 8.login details: username:root pass:root
+
+9.mysql username: root pass:root
